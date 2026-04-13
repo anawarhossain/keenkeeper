@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arif.dev@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["office", "tech-lead"],
+    "bio": "Senior developer and mentor. We often discuss React architecture and open-source contributions.",
+    "goal": 14,
+    "next_due_date": "2026-03-31"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.design@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["college", "close friend"],
+    "bio": "Expert in UI/UX design. We share a common interest in minimalist workspace setups and photography.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/85.jpg",
+    "email": "tanvir.h@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["school", "childhood"],
+    "bio": "Childhood friend from high school. Currently living abroad. We catch up over weekend gaming sessions.",
+    "goal": 15,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 4,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "nusrat.j@gmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["university", "travel-buddy"],
+    "bio": "Passionate traveler and foodie. We explored the northern hills together back in 2023.",
+    "goal": 30,
+    "next_due_date": "2026-02-28"
+  },
+  {
+    "id": 5,
+    "name": "Rakib Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "rakib.fitness@gmail.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["gym", "neighbor"],
+    "bio": "Workout partner and neighbor. Always keeps me motivated to hit the gym every morning.",
+    "goal": 3,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Sumaiya Islam",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "sumaiya.i@gmail.com",
+    "days_since_contact": 25,
+    "status": "almost due",
+    "tags": ["freelancer", "network"],
+    "bio": "Met at a tech conference. A talented content creator who helps with marketing strategies.",
+    "goal": 28,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 7,
+    "name": "Fahim Shahriar",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "fahim.s@gmail.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["business", "mentor"],
+    "bio": "Helped me during my initial startup phase. A go-to person for business and investment advice.",
+    "goal": 30,
+    "next_due_date": "2026-02-13"
+  },
+  {
+    "id": 8,
+    "name": "Mehzabin Mim",
+    "picture": "https://randomuser.me/api/portraits/women/28.jpg",
+    "email": "mehzabin@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["coding-bootcamp", "peer"],
+    "bio": "Learning full-stack development together. We pair-program on weekends to solve LeetCode problems.",
+    "goal": 7,
+    "next_due_date": "2026-04-16"
+  }
+]
