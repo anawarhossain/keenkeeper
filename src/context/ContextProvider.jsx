@@ -3,28 +3,29 @@ import { Context } from "./Context";
 
 const ContextProvider = ({ children }) => {
   const [friends, setFriends] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/friends.json")
       .then((res) => res.json())
-      .then((data) => setFriends(data))
-      .catch((err) => console.log(err));
+      .then((data) => {
+        setFriends(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
   }, []);
-    
-    
-    
-    
-    
-    const data = {
-        friends,
-        setFriends,
-    }
 
-  return (
-    <Context.Provider value={data}>
-      {children}
-    </Context.Provider>
-  );
+  const data = {
+    friends,
+    setFriends,
+    loading,
+    setLoading,
+  };
+
+  return <Context.Provider value={data}>{children}</Context.Provider>;
 };
 
 export default ContextProvider;

@@ -19,10 +19,17 @@ const FriendCard = ({ friend }) => {
         <p className="text-gray-600 text-sm">
           {friend.days_since_contact}d ago
         </p>
-        <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs mb-2 inline-block">
-          {friend?.tags[1]}
-        </span>{" "}
-        <br />
+        <div>
+          {friend.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="
+              bg-green-500 text-white px-2 py-1 rounded-full text-xs mb-2 mr-2 inline-block"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
         <span
           className={`${statusColors[friend.status]} text-white px-2 py-1 rounded-full text-xs`}
         >
