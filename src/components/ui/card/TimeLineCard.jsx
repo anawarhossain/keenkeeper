@@ -3,7 +3,7 @@ import React from 'react';
 const TimeLineCard = ({ call }) => {
     return (
       <div>
-        <div className="border-b bg-white shadow rounded-lg mt-5">
+        <div className="border-b bg-white shadow rounded-lg">
           <div className="flex items-center gap-3 py-4 px-2.5">
             <span className="font-bold text-2xl">{call.icon}</span>
             <div className="">
