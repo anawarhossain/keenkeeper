@@ -10,17 +10,17 @@ const Stats = ({ isAnimationActive = true }) => {
   const data = [
     {
       name: "Text",
-      value: callButtons.filter((call) => call.type === "Text")?.length,
+      value: callButtons?.filter((call) => call.type === "Text")?.length,
       fill: "#0088FE",
     },
     {
       name: "Call",
-      value: callButtons.filter((call) => call.type === "Call")?.length,
+      value: callButtons?.filter((call) => call.type === "Call")?.length,
       fill: "#00C49F",
     },
     {
       name: "Video",
-      value: callButtons.filter((call) => call.type === "Video")?.length,
+      value: callButtons?.filter((call) => call.type === "Video")?.length,
       fill: "#FFBB28",
     },
   ];

@@ -44,7 +44,7 @@ const FriendDetails = () => {
               <span
                 className={`${statusColors[expecteFriend?.status]} text-white px-2 py-1 rounded-full text-xs`}
               >
-                {expecteFriend?.status}
+                {expecteFriend?.status.charAt(0).toUpperCase() + expecteFriend?.status.slice(1)}
               </span>
               <div>
                 {expecteFriend?.tags.map((tag, index) => (
@@ -53,7 +53,7 @@ const FriendDetails = () => {
                     className="
                     bg-green-500 text-white px-2 py-1 rounded-full text-xs mt-2 mr-2 inline-block"
                   >
-                    {tag}
+                    {tag.charAt(0).toUpperCase() + tag.slice(1)}
                   </span>
                 ))}
               </div>

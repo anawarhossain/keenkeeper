@@ -28,14 +28,14 @@ const FriendCard = ({ friend }) => {
                 className="
               bg-green-500 text-white px-2 py-1 rounded-full text-xs mb-2 mr-2 inline-block"
               >
-                {tag}
+                {tag.charAt(0).toUpperCase() + tag.slice(1)}
               </span>
             ))}
           </div>
           <span
             className={`${statusColors[friend.status]} text-white px-2 py-1 rounded-full text-xs`}
           >
-            {friend.status}
+            {friend.status.charAt(0).toUpperCase() + friend.status.slice(1)}
           </span>
         </div>
       </div>
