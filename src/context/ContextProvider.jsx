@@ -5,6 +5,25 @@ const ContextProvider = ({ children }) => {
   const [friends, setFriends] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const [callButtons, setCallButtons] = useState([]);
+
+  const handleCall = ({ expecteFriend, Call, Icon, text }) => {
+    const newCall = {
+      id: Date.now(),
+      type: Call,
+      icon: Icon,
+      text: text,
+      timestamp: new Date().toISOString(),
+      expecteFriend: expecteFriend,
+    };
+
+    setCallButtons((prev) => {
+      const updated = [...prev, newCall];
+      console.log("Updated callButtons:", updated);
+      return updated;
+    });
+  };
+
   useEffect(() => {
     fetch("/friends.json")
       .then((res) => res.json())
@@ -23,6 +42,9 @@ const ContextProvider = ({ children }) => {
     setFriends,
     loading,
     setLoading,
+    callButtons,
+    setCallButtons,
+    handleCall,
   };
 
   return <Context.Provider value={data}>{children}</Context.Provider>;
