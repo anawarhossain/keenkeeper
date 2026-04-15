@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto space-y-8 mb-10">
+    <div className="w-[90%] mx-auto space-y-8 mt-10 mb-10">
       <div className="text-center p-10 space-y-3">
         <h1 className="text-4xl font-bold">
           Friends to keep close in your life

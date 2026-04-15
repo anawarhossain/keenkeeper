@@ -3,7 +3,7 @@ import React from 'react';
 const CallCard = ({call}) => {
     return (
       <div>
-        <div key={call.id} className="border-b shadow rounded-lg mt-4">
+        <div className="border-b shadow rounded-lg mt-4">
           <div className="flex items-center gap-3 py-4 px-1.5">
             <span className="font-bold text-2xl">{call.icon}</span>
             <div className="flex justify-between items-center w-full">
