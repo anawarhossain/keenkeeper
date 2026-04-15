@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Context } from "./Context";
+import { toast } from "react-toastify";
 
 const ContextProvider = ({ children }) => {
   const [friends, setFriends] = useState([]);
@@ -21,6 +22,17 @@ const ContextProvider = ({ children }) => {
       const updated = [...prev, newCall];
       console.log("Updated callButtons:", updated);
       return updated;
+    });
+
+    toast.success(`${Call} successfully added!`, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
     });
   };
 
