@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import { Context } from "../../context/Context";
+import NodataTimelineCard from "../../components/ui/card/NodataTimelineCard";
 
 const Stats = ({ isAnimationActive = true }) => {
   const { callButtons } = useContext(Context);
@@ -29,26 +30,32 @@ const Stats = ({ isAnimationActive = true }) => {
       <div className="mt-10 mb-10">
         <h1 className="text-4xl font-bold mb-4">Friendship Analytics</h1>
 
-        <div className="h-75 md:h-100 p-4 bg-white rounded-lg shadow-md">
-          <h1 className="text-lg mb-4">By Interaction Type</h1>
+        {callButtons.length === 0 ? (
+          <div className="h-100 flex items-center justify-center bg-white rounded-lg shadow-md">
+            <NodataTimelineCard />
+          </div>
+        ) : (
+          <div className="h-75 md:h-100 p-4 bg-white rounded-lg shadow-md">
+            <h1 className="text-lg mb-4">By Interaction Type</h1>
 
-          {/* Responsive Wrapper */}
-          <ResponsiveContainer width="100%" height="100%">
-            <PieChart margin={{ bottom: 30 }}>
-              <Pie
-                data={data}
-                innerRadius="60%"
-                outerRadius="80%"
-                cornerRadius={100}
-                paddingAngle={5}
-                dataKey="value"
-                isAnimationActive={isAnimationActive}
-              />
-              <Tooltip />
-              <Legend verticalAlign="bottom" height={45} />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
+            {/* Responsive Wrapper */}
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart margin={{ bottom: 30 }}>
+                <Pie
+                  data={data}
+                  innerRadius="60%"
+                  outerRadius="80%"
+                  cornerRadius={100}
+                  paddingAngle={5}
+                  dataKey="value"
+                  isAnimationActive={isAnimationActive}
+                />
+                <Tooltip />
+                <Legend verticalAlign="bottom" height={45} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        )}
       </div>
     </div>
   );

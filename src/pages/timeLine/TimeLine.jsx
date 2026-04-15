@@ -17,7 +17,7 @@ const TimeLine = () => {
         );
 
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="w-[80%] mx-auto">
       <div className="mt-10 mb-10">
         <div>
           <h1 className="text-4xl font-bold mb-4">TimeLine</h1>
