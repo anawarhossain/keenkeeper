@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import TimeLineCard from "../../components/ui/card/TimeLineCard";
 import NodataTimelineCard from "../../components/ui/card/NodataTimelineCard";
@@ -20,7 +20,7 @@ const TimeLine = () => {
     <div className="w-[90%] mx-auto">
       <div className="mt-10 mb-10">
         <div>
-          <h1 className="text-4xl font-bold">TimeLine</h1>
+          <h1 className="text-4xl font-bold mb-4">TimeLine</h1>
           <fieldset className="fieldset">
             <select
               className="select"

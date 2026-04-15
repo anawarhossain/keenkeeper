@@ -125,8 +125,8 @@ const FriendDetails = () => {
                 onClick={() =>
                   handleCall({
                     expecteFriend,
-                    Call: "Call",
-                    Icon: <BiPhoneCall />,
+                    item: "Call",
+                    icon: <BiPhoneCall />,
                     text: "Asked for career advice",
                   })
                 }
@@ -139,8 +139,8 @@ const FriendDetails = () => {
                 onClick={() =>
                   handleCall({
                     expecteFriend,
-                    Call: "Text",
-                    Icon: <BiMessageDots />,
+                    item: "Text",
+                    icon: <BiMessageDots />,
                     text: "Text for career advice",
                   })
                 }
@@ -153,8 +153,8 @@ const FriendDetails = () => {
                 onClick={() =>
                   handleCall({
                     expecteFriend,
-                    Call: "Video",
-                    Icon: <IoVideocamOutline />,
+                    item: "Video",
+                    icon: <IoVideocamOutline />,
                     text: "Industry conference meetup",
                   })
                 }

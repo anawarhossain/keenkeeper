@@ -8,11 +8,11 @@ const ContextProvider = ({ children }) => {
 
   const [callButtons, setCallButtons] = useState([]);
 
-  const handleCall = ({ expecteFriend, Call, Icon, text }) => {
+  const handleCall = ({ expecteFriend, item, icon, text }) => {
     const newCall = {
       id: Date.now(),
-      type: Call,
-      icon: Icon,
+      type: item,
+      icon: icon,
       text: text,
       timestamp: new Date().toISOString(),
       expecteFriend: expecteFriend,
@@ -24,7 +24,7 @@ const ContextProvider = ({ children }) => {
       return updated;
     });
 
-    toast.success(`${Call} successfully added!`, {
+    toast.success(`${item} successfully added!`, {
       position: "top-center",
       autoClose: 2000,
       hideProgressBar: false,
