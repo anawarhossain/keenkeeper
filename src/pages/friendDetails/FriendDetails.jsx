@@ -57,7 +57,8 @@ const FriendDetails = () => {
                   </span>
                 ))}
               </div>
-              <p className="text-gray-400">"{expecteFriend?.bio}"</p>
+              <p className="text-gray-400 italic">"{expecteFriend?.bio}"</p>
+              <p className="text-gray-400">"{expecteFriend?.email}"</p>
             </div>
           </div>
           <div className="flex flex-col gap-4 mt-5">
