@@ -81,3 +81,13 @@ The app uses `public/friends.json` as the initial dataset and manages interactio
 - **X(Twitter):** [Anawar Hossain](https://x.com/MDANAWAR22)
 - **WhatsApp:** [Anawar Hossain](https://wa.me/+8801701020694)
 - **Role:** Junior Developer
+
+## Live Link
+
+- [Live Link](https://anawarhossain-keenkeeper.netlify.app/)
+
+## Project Screenshot
+
+<p align="center">
+  <img src="public/preview.png" alt="Project Preview" width=" ">
+</p>
